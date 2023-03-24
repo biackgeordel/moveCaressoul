@@ -1,0 +1,30 @@
+:root {
+  font-size: 65.5%;
+}
+*,
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.box-element {
+  height: 100vh;
+  display: flex;
+  border: 1px solid blue;
+  align-items: center;
+  overflow: hidden;
+}
+.item:nth-child(n + 1) {
+  padding: 0 1rem;
+  flex: 0 0 25%;
+  transition: 1s transform linear;
+}
+.el-item:nth-child(n + 1) {
+  background: #2c3e50;
+  height: 250px;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: calc((250px - 1.5rem) / 2) 0;
+  color: white;
+}
